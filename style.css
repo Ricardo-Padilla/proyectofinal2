@@ -1,0 +1,52 @@
+h2{
+    animation-name: color;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    font-weight: bolder;
+}
+.grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    justify-content: left;
+    font-weight: bolder;
+}
+body {
+    background-image: linear-gradient(to bottom, cadetblue, white);
+}
+.grid div{
+    justify-content: center;
+}
+@keyframes color {
+    0%{
+        color: cadetblue;
+    }
+    50%{
+        color: lightblue;
+    }
+    100%{
+        color: blue;
+    }
+}
+.grid2 {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 150px 200px 200px 200px 200px;
+    font-weight: bolder;
+}
+.grid3 {
+    display: grid;
+    grid-template-columns: 250px 250px 250px 250px;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-content: center;
+    font-weight: bolder;
+    margin: 50px;
+    padding: 50px;
+}
+.grid3 div{
+    justify-content: center;
+    align-content: center;
+    border: 1px solid black;
+}
