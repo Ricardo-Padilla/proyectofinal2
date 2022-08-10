@@ -1,52 +1,72 @@
-h2{
-    animation-name: color;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse;
-    font-weight: bolder;
-}
-.grid {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
-    justify-content: left;
-    font-weight: bolder;
-}
 body {
-    background-image: linear-gradient(to bottom, cadetblue, white);
+  background-image: linear-gradient(to bottom, cadetblue, white);
 }
-.grid div{
-    justify-content: center;
+
+.grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  justify-content: left;
+  font-weight: bolder;
 }
-@keyframes color {
-    0%{
-        color: cadetblue;
-    }
-    50%{
-        color: lightblue;
-    }
-    100%{
-        color: blue;
-    }
+.grid div {
+  justify-content: center;
 }
+
 .grid2 {
-    display: grid;
-    grid-template-rows: auto auto;
-    grid-template-columns: 150px 200px 200px 200px 200px;
-    font-weight: bolder;
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: 150px 200px 200px 200px 200px;
+  font-weight: bolder;
 }
+
 .grid3 {
-    display: grid;
-    grid-template-columns: 250px 250px 250px 250px;
-    grid-template-rows: auto;
-    justify-content: center;
-    align-content: center;
-    font-weight: bolder;
-    margin: 50px;
-    padding: 50px;
+  display: grid;
+  grid-template-columns: 250px 250px 250px 250px;
+  grid-template-rows: auto;
+  justify-content: center;
+  align-content: center;
+  font-weight: bolder;
+  margin: 50px;
+  padding: 50px;
 }
-.grid3 div{
-    justify-content: center;
-    align-content: center;
-    border: 1px solid black;
+.grid3 div {
+  justify-content: center;
+  align-content: center;
+  border: 1px solid black;
 }
+
+h2 {
+  -webkit-animation-name: color;
+          animation-name: color;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  font-weight: bolder;
+}
+
+@-webkit-keyframes color {
+  0% {
+    color: linear-gradient(to bottom, cadetblue, white);
+  }
+  50% {
+    color: lightblue;
+  }
+  100% {
+    color: blue;
+  }
+}
+
+@keyframes color {
+  0% {
+    color: linear-gradient(to bottom, cadetblue, white);
+  }
+  50% {
+    color: lightblue;
+  }
+  100% {
+    color: blue;
+  }
+}/*# sourceMappingURL=style.css.map */
