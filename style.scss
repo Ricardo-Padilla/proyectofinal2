@@ -1,6 +1,8 @@
 $colorb: linear-gradient(to bottom, cadetblue, white);
 body {
     background-image: $colorb;
+    margin: 0;
+    padding: 0;
 }
 .grid{
     display: grid;
@@ -49,5 +51,48 @@ h2{
     }
     100%{
         color: blue;
+    }
+}
+$index: (
+  alin: center,
+  fcolor: blue,
+  font: 100px,
+);
+.welcome {
+  text-align: map-get($index, alin);
+  color: map-get($index, fcolor);
+  font-size:map-get($index, font);
+}
+@mixin grillas {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    justify-content: center;
+    font-size: 25px;
+    padding: 50px;
+}
+.grid4 {
+    @include grillas;
+}
+.ind {
+    text-align: left;
+    padding: 25px;
+    font-family: monospace
+}
+.ind2 {
+    @extend .ind;
+    color: grey;
+}
+.ind3 {
+    @extend .ind;
+    color: blueviolet
+}
+.ind4 {
+    @extend .ind;
+    color: lightseagreen
+}
+@media (max-width: 500px){
+    .grid4{
+        grid-template-columns: auto
     }
 }
